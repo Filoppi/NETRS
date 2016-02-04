@@ -1,0 +1,330 @@
+fileFormatVersion: 2
+guid: 9db79968a741d564e8b98d5386f4b83b
+timeCreated: 1454178764
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: caneBAU_0
+    21300002: caneBAU_1
+    21300004: caneBAU_2
+    21300006: caneBAU_3
+    21300008: caneBAU_4
+    21300010: caneBAU_5
+    21300012: caneBAU_6
+    21300014: caneBAU_7
+    21300016: caneBAU_8
+    21300018: caneBAU_9
+    21300020: caneBAU_10
+    21300022: caneBAU_11
+    21300024: caneBAU_12
+    21300026: caneBAU_13
+    21300028: caneBAU_14
+    21300030: caneBAU_15
+    21300032: caneBAU_16
+    21300034: caneBAU_17
+    21300036: caneBAU_18
+    21300038: caneBAU_19
+    21300040: caneBAU_20
+    21300042: caneBAU_21
+    21300044: caneBAU_22
+    21300046: caneBAU_23
+    21300048: caneBAU_24
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: caneBAU_0
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 8720
+        width: 1770
+        height: 960
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: caneBAU_1
+      rect:
+        serializedVersion: 2
+        x: 2225
+        y: 8720
+        width: 1760
+        height: 960
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: caneBAU_2
+      rect:
+        serializedVersion: 2
+        x: 4285
+        y: 8720
+        width: 1750
+        height: 960
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: caneBAU_3
+      rect:
+        serializedVersion: 2
+        x: 6340
+        y: 8720
+        width: 1745
+        height: 960
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: caneBAU_4
+      rect:
+        serializedVersion: 2
+        x: 8400
+        y: 8720
+        width: 1740
+        height: 960
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: caneBAU_5
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 6660
+        width: 1710
+        height: 960
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: caneBAU_6
+      rect:
+        serializedVersion: 2
+        x: 2255
+        y: 6660
+        width: 1730
+        height: 960
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: caneBAU_7
+      rect:
+        serializedVersion: 2
+        x: 4275
+        y: 6670
+        width: 1765
+        height: 950
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: caneBAU_8
+      rect:
+        serializedVersion: 2
+        x: 6290
+        y: 6670
+        width: 1795
+        height: 950
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: caneBAU_9
+      rect:
+        serializedVersion: 2
+        x: 8325
+        y: 6660
+        width: 1815
+        height: 960
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: caneBAU_10
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 4620
+        width: 1820
+        height: 960
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: caneBAU_11
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 4620
+        width: 1840
+        height: 940
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: caneBAU_12
+      rect:
+        serializedVersion: 2
+        x: 4205
+        y: 4620
+        width: 1835
+        height: 920
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: caneBAU_13
+      rect:
+        serializedVersion: 2
+        x: 6250
+        y: 4620
+        width: 1835
+        height: 905
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: caneBAU_14
+      rect:
+        serializedVersion: 2
+        x: 8300
+        y: 4620
+        width: 1835
+        height: 885
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: caneBAU_15
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 2560
+        width: 1840
+        height: 880
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: caneBAU_16
+      rect:
+        serializedVersion: 2
+        x: 2175
+        y: 2575
+        width: 1825
+        height: 905
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: caneBAU_17
+      rect:
+        serializedVersion: 2
+        x: 4240
+        y: 2575
+        width: 1800
+        height: 925
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: caneBAU_18
+      rect:
+        serializedVersion: 2
+        x: 6300
+        y: 2575
+        width: 1785
+        height: 945
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: caneBAU_19
+      rect:
+        serializedVersion: 2
+        x: 8375
+        y: 2560
+        width: 1750
+        height: 1005
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: caneBAU_20
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 520
+        width: 1680
+        height: 1120
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: caneBAU_21
+      rect:
+        serializedVersion: 2
+        x: 2240
+        y: 520
+        width: 1720
+        height: 1120
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: caneBAU_22
+      rect:
+        serializedVersion: 2
+        x: 4260
+        y: 520
+        width: 1745
+        height: 1085
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: caneBAU_23
+      rect:
+        serializedVersion: 2
+        x: 6315
+        y: 520
+        width: 1755
+        height: 1040
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: caneBAU_24
+      rect:
+        serializedVersion: 2
+        x: 8370
+        y: 520
+        width: 1770
+        height: 960
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

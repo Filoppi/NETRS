@@ -1,0 +1,220 @@
+fileFormatVersion: 2
+guid: 371c88daf3c167e45ad6e9d83a57aaa9
+timeCreated: 1454181750
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: caneUP_0
+    21300002: caneUP_1
+    21300004: caneUP_2
+    21300006: caneUP_3
+    21300008: caneUP_4
+    21300010: caneUP_5
+    21300012: caneUP_6
+    21300014: caneUP_7
+    21300016: caneUP_8
+    21300018: caneUP_9
+    21300020: caneUP_10
+    21300022: caneUP_11
+    21300024: caneUP_12
+    21300026: caneUP_13
+    21300028: caneUP_14
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: caneUP_0
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 4619
+        width: 1555
+        height: 790
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: caneUP_1
+      rect:
+        serializedVersion: 2
+        x: 2330
+        y: 4619
+        width: 1590
+        height: 805
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: caneUP_2
+      rect:
+        serializedVersion: 2
+        x: 4365
+        y: 4619
+        width: 1625
+        height: 820
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: caneUP_3
+      rect:
+        serializedVersion: 2
+        x: 6395
+        y: 4619
+        width: 1660
+        height: 840
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: caneUP_4
+      rect:
+        serializedVersion: 2
+        x: 8405
+        y: 4619
+        width: 1710
+        height: 855
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: caneUP_5
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 2570
+        width: 1770
+        height: 869
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: caneUP_6
+      rect:
+        serializedVersion: 2
+        x: 2210
+        y: 2570
+        width: 1775
+        height: 884
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: caneUP_7
+      rect:
+        serializedVersion: 2
+        x: 4250
+        y: 2570
+        width: 1785
+        height: 904
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: caneUP_8
+      rect:
+        serializedVersion: 2
+        x: 6295
+        y: 2570
+        width: 1790
+        height: 919
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: caneUP_9
+      rect:
+        serializedVersion: 2
+        x: 8360
+        y: 2570
+        width: 1770
+        height: 939
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: caneUP_10
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 525
+        width: 1770
+        height: 955
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: caneUP_11
+      rect:
+        serializedVersion: 2
+        x: 2215
+        y: 525
+        width: 1770
+        height: 950
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: caneUP_12
+      rect:
+        serializedVersion: 2
+        x: 4265
+        y: 525
+        width: 1770
+        height: 950
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: caneUP_13
+      rect:
+        serializedVersion: 2
+        x: 6315
+        y: 525
+        width: 1770
+        height: 950
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: caneUP_14
+      rect:
+        serializedVersion: 2
+        x: 8360
+        y: 525
+        width: 1770
+        height: 950
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
