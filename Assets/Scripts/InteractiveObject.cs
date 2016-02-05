@@ -1,20 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-[System.Serializable]
-public class Randomness {
-	public string name;
-	public int action;
-}
-
-[System.Serializable]
-public class Randomness2 {
-	public Randomness name;
-	public Randomness action;
-}
-
 public class InteractiveObject : MonoBehaviour {
-	public Randomness2 asdasd; //Unused
+	public int linkedLevelAction = -1; //To think...
 	public bool isUsable = true; //Unused
 	public bool isPickable = false;
 	private bool isPicked = false;
@@ -27,14 +15,9 @@ public class InteractiveObject : MonoBehaviour {
 	public bool storyGoesAheadIfFailed = false;
 	public float actionLenght = 0;
 	public float actionRadius = 3.2f;
-	public InteractiveObject linkedObject;
+	public InteractiveObject linkedObject; //Should be of a interactive obj type, name, tag or prefab
 	public bool canBeUsedWithoutLinkedObject = true;
-	public InteractiveObject nextObject;
 	public int characterAnimationPhase = -1; //if -1 then the character arm just rotates when picking
-	public Character linkedCharacter;
-	public Animator linkedCharacterAnimator; //Temp
-	public int linkedCharacterAction = -1;
-	public int linkedCharacterAnimation = -1;
 	//Link to char hand
 	public AudioClip useSound;
 	public AudioClip hitSound;
@@ -177,18 +160,20 @@ public class InteractiveObject : MonoBehaviour {
 
 	public virtual void EndAction()
 	{
-		if (linkedCharacter) {
-			if (linkedCharacterAction >= 0)	linkedCharacter.Action (linkedCharacterAction);
-			if (linkedCharacterAnimation >= 0) linkedCharacterAnimator.SetInteger ("AnimState", linkedCharacterAnimation);
-			CameraManager.instance.ChangeCharacter(linkedCharacter.id);
-		}
-		if (nextObject) {
-			nextObject.Use(true);
-		}
-		if (characterAnimationPhase >= 0) {
-			PlayerController.instance.currentPlayer.animator.SetInteger ("AnimState", 0);
-			PlayerController.instance.currentPlayer.isControlled = true;
-			//GetMainCharacter and reset animation and control
+		if (actions.Length > currentAction) {
+			if (actions[currentAction].nextCharacter) {
+				if (actions[currentAction].actionNumber >= 0)
+					actions[currentAction].nextCharacter.Action(actions[currentAction].actionNumber );
+				CameraManager.instance.ChangeCharacter (actions[currentAction].nextCharacter.id);
+			}
+			if (actions[currentAction].nextObject) {
+				actions[currentAction].nextObject.Use(true);
+			}
+			if (characterAnimationPhase >= 0) {
+				PlayerController.instance.currentPlayer.animator.SetInteger ("AnimState", 0);
+				PlayerController.instance.currentPlayer.isControlled = true;
+				//GetMainCharacter and reset animation and control
+			}
 		}
 	}
 }

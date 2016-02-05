@@ -4,7 +4,7 @@ using System.Collections;
 public class Character : MonoBehaviour {
 	public int id = -1;
 	public bool isActive = false;
-	public float speed = 8f;
+	public float speed = 8f; //To move???
 	bool isMoving = false;
 	public bool isAnimating = true;
 	public int animationPhase = 0;
