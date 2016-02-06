@@ -7,6 +7,7 @@ public class ChangeDirection : MonoBehaviour {
 	public Vector2 XMinAndMax;
 	public float randomizedXToAdd = 0;
 	private float currentRandomizedXToAdd = 0;
+	//public float toAddWaitTime???
 
 	//public float timer = 5.2f;
 

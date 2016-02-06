@@ -10,6 +10,9 @@ public class CameraStep {
 	public int cameraFov = -1;
 	public bool startGameplay = false; //temp //if true: the gameplay (and Levels Manager starts)
 	public bool isLastStep = false; //if true: the game ends
+
+	public int talkingCharacter = -1; //Temp
+	public string dialogue = ""; //Temp
 }
 
 [System.Serializable]

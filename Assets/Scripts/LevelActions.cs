@@ -2,7 +2,7 @@
 using System.Collections;
 
 [System.Serializable]
-public class Action {
+public class GameAction {
 	public float preDelay = 0.0f; //From the start of this actions group or from the end of the previous one
 	public float postDelay = 0.0f; //Needeed???
 	public int actionNumber = -1;
@@ -17,7 +17,7 @@ public class Action {
 //Actions Manager (Actions in plot???)
 
 public class LevelActions : MonoBehaviour {
-	public Action[] actions; //Unused
+	public GameAction[] actions; //Unused
 	private int currentAction = -1;
 
 	// Use this for initialization

@@ -1,6 +1,15 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+public enum state { steady, controlled, selfControlled, action }
+public enum behaviour { idle, patrol }
+public enum actions {
+	goTo,
+	follow,
+	triggerAnimation, //Can finish upon animation end, or times executed, or time...
+	waitFor, //Don't change the previous character state
+}
+
 public class Character : MonoBehaviour {
 	public int id = -1;
 	public bool isActive = false;

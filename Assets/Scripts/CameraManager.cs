@@ -10,23 +10,25 @@ public class CameraStepSkipButtons {
 	public bool Y = false;
 }
 
+public enum GameState { Menu, CutScene, Dialogue, Gameplay} //Should menu be moved to its own scene?
+
 public class CameraManager : MonoBehaviour {
 	public static CameraManager instance;
 	public int currentStep = 0;
-	public int gameplayCameraFov = 7;
 	public int cutsceneCameraFov = 10;
+	public int gameplayCameraFov = 7;
+	public int changeCharacterCameraFov = 10;
+	public float changeCharacterTime = 0.8f;
 	private float timer = 0;
 	private CameraStepSkipButtons isSkippableWith;
-	public bool isTranslating = false;
+	[System.NonSerialized] public bool isTranslating = false;
 	private bool canOnlySkipAfterTime = false;
-	//bool isInGameplay = true; //Useless
-	//Use this for initialization? //What????
+	private GameState state = GameState.Menu;
 	//private ArrayList characters = new ArrayList(); //-1 //To make array and int index of linked character (-1 when not linked)
-	public int characterID = -1;
+	[System.NonSerialized] public int characterID = -1;
 	private float zoomTimePassed = 0;
-	public float changeCharacterTime = 0.8f;
-	Character prevCharacter;
-	Character character;
+	private Character prevCharacter;
+	private Character character;
 	private float cameraZ = -10;
 
 	void Awake() {
@@ -73,7 +75,7 @@ public class CameraManager : MonoBehaviour {
 					fovAlpha = changeCharacterTime - zoomTimePassed;
 				}
 
-				GetComponent<Camera> ().orthographicSize = gameplayCameraFov + ((10 - gameplayCameraFov) * fovAlpha / (changeCharacterTime / 2));
+				GetComponent<Camera> ().orthographicSize = gameplayCameraFov + ((changeCharacterCameraFov - gameplayCameraFov) * fovAlpha / (changeCharacterTime / 2));
 				Vector3 newPosition = Vector3.Lerp(prevCharacter.transform.position, character.transform.position, zoomTimePassed / changeCharacterTime);
 				newPosition.z = cameraZ;
 				transform.position = newPosition;
