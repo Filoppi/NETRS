@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+[DisallowMultipleComponent]
 public class InteractiveObject : MonoBehaviour {
 	public int linkedLevelAction = -1; //To think...
 	public bool isUsable = true; //Unused
@@ -104,6 +105,13 @@ public class InteractiveObject : MonoBehaviour {
 		}
 	}
 
+	public void NewM1(GameObject newJJ, string ambro)
+	{
+	}
+	public void NewM2(Vector4 asd, float now)
+	{
+	}
+
 	public int Action()
 	{
 		ShowHelp (false);
@@ -160,20 +168,20 @@ public class InteractiveObject : MonoBehaviour {
 
 	public virtual void EndAction()
 	{
-		if (actions.Length > currentAction) {
-			if (actions[currentAction].nextCharacter) {
-				if (actions[currentAction].actionNumber >= 0)
-					actions[currentAction].nextCharacter.Action(actions[currentAction].actionNumber );
-				CameraManager.instance.ChangeCharacter (actions[currentAction].nextCharacter.id);
-			}
-			if (actions[currentAction].nextObject) {
-				actions[currentAction].nextObject.Use(true);
-			}
-			if (characterAnimationPhase >= 0) {
-				PlayerController.instance.currentPlayer.animator.SetInteger ("AnimState", 0);
-				PlayerController.instance.currentPlayer.isControlled = true;
-				//GetMainCharacter and reset animation and control
-			}
-		}
+//		if (actions.Length > currentAction) {
+//			if (actions[currentAction].nextCharacter) {
+//				if (actions[currentAction].actionNumber >= 0)
+//					actions[currentAction].nextCharacter.Action(actions[currentAction].actionNumber );
+//				CameraManager.instance.ChangeCharacter (actions[currentAction].nextCharacter.id);
+//			}
+//			if (actions[currentAction].nextObject) {
+//				actions[currentAction].nextObject.Use(true);
+//			}
+//			if (characterAnimationPhase >= 0) {
+//				PlayerController.instance.currentPlayer.animator.SetInteger ("AnimState", 0);
+//				PlayerController.instance.currentPlayer.isControlled = true;
+//				//GetMainCharacter and reset animation and control
+//			}
+//		}
 	}
 }

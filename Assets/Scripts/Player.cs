@@ -18,9 +18,8 @@ public class Player : Character {
 		
 	public PlayerController controller;
 	
-	void Awake(){
-		rigidbody2D = GetComponent<Rigidbody2D> ();
-		animator = GetComponent<Animator> ();
+	public override void Awake(){
+		base.Awake ();
 		controller = GameObject.FindGameObjectWithTag("GameManager").GetComponent<PlayerController> () as PlayerController;
 	}
 
@@ -75,18 +74,18 @@ public class Player : Character {
 	void OnCollisionEnter2D(Collision2D target){
 		if (target.gameObject.tag == "Stairs") {
 			canGoUp = true;
-			rigidbody2D.gravityScale = 0;
+			rb2d.gravityScale = 0;
 		}
 		else if (target.gameObject.tag == "StairsEnd") {
 			canGoUp = false;
-			rigidbody2D.gravityScale = 12;
+			rb2d.gravityScale = 12;
 		}
 	}
 
 	void OnCollisionExit2D(Collision2D target) {
 		//if (target.gameObject.tag == "Stairs") {
 		//	canGoUp = false;
-		//	rigidbody2D.gravityScale = 12;
+		//	rb2d.gravityScale = 12;
 		//}
 	}
 
@@ -109,8 +108,8 @@ public class Player : Character {
 		//var forceX = 0f;
 		//var forceY = 0f;
 		
-		//var absVelX = Mathf.Abs (rigidbody2D.velocity.x);
-		//var absVelY = Mathf.Abs (rigidbody2D.velocity.y);
+		//var absVelX = Mathf.Abs (rb2d.velocity.x);
+		//var absVelY = Mathf.Abs (rb2d.velocity.y);
 
 //			if (absVelX < maxVelocity.x) {
 //				
@@ -132,13 +131,13 @@ public class Player : Character {
 //			animator.SetInteger("AnimState", 3);
 //		}
 		
-		//rigidbody2D.AddForce (new Vector2 (forceX, forceY));
+		//rb2d.AddForce (new Vector2 (forceX, forceY));
 	}
 	
 	public void MoveRight(float alpha = 0) {
 		if (!isControlled || isClimbing) alpha = 0;
-		rigidbody2D.AddForce (new Vector2(speed * alpha, 0));
-		//rigidbody2D.velocity = (new Vector2(speed * Time.deltaTime * 300 * alpha, 0));
+		rb2d.AddForce (new Vector2(speed * alpha, 0));
+		//rb2d.velocity = (new Vector2(speed * Time.deltaTime * 300 * alpha, 0));
 
 		if (Mathf.Abs(alpha) < 0.13f) animator.SetInteger ("AnimState", 0);
 		else animator.SetInteger ("AnimState", 1);
@@ -153,10 +152,10 @@ public class Player : Character {
 	public void MoveUp(float alpha = 1) {
 		if (!isControlled || !canGoUp) {
 			isClimbing = false;
-			rigidbody2D.velocity = (new Vector2 (0, 0));
+			rb2d.velocity = (new Vector2 (0, 0));
 		} else {
 			isClimbing = true;
-			rigidbody2D.velocity = (new Vector2 (0, climbingSpeed * alpha));
+			rb2d.velocity = (new Vector2 (0, climbingSpeed * alpha));
 		}
 	}
 }

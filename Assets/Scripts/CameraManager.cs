@@ -12,6 +12,7 @@ public class CameraStepSkipButtons {
 
 public enum GameState { Menu, CutScene, Dialogue, Gameplay} //Should menu be moved to its own scene?
 
+[DisallowMultipleComponent]
 public class CameraManager : MonoBehaviour {
 	public static CameraManager instance;
 	public int currentStep = 0;

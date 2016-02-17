@@ -10,7 +10,9 @@ public enum actions {
 	waitFor, //Don't change the previous character state
 }
 
+[DisallowMultipleComponent]
 public class Character : MonoBehaviour {
+	public System.Type whichType;
 	public int id = -1;
 	public bool isActive = false;
 	public float speed = 8f; //To move???
@@ -18,14 +20,17 @@ public class Character : MonoBehaviour {
 	public bool isAnimating = true;
 	public int animationPhase = 0;
 
-	protected Rigidbody2D rigidbody2D;
+	protected Rigidbody2D rb2d;
 	public Animator animator;
 
-	void Awake () {
-		rigidbody2D = GetComponent<Rigidbody2D> ();
+	public virtual void Awake () {
+		rb2d = GetComponent<Rigidbody2D> ();
 		animator = GetComponent<Animator> ();
 	}
 
 	public virtual void Action(int number) {
+	}
+	public static void prpra() {
+		print("FUCK AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA ");
 	}
 }

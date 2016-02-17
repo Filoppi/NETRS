@@ -3,7 +3,7 @@ using System.Collections;
 
 public class ChangeDirection : MonoBehaviour {
 
-	public bool enabled = true;
+	public bool disabled = false; //Needed???
 	public Vector2 XMinAndMax;
 	public float randomizedXToAdd = 0;
 	private float currentRandomizedXToAdd = 0;
